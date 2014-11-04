@@ -235,6 +235,53 @@ function ObjectEditor:mouseDown (x, y, button)
 	end
 end
 
+function ObjectEditor:selected()
+	local s
+	for s=1, #selection do
+		if selection[s] == self then
+			return true
+		end
+	end
+
+	return false
+end
+
+function ObjectEditor:toGridLeft (x, y)
+	self.object.properties.x = x + self.object.properties.x - (self.object.properties.x+x)%64
+	self.object.properties.y = y + self.object.properties.y - (self.object.properties.y+y)%64
+end
+
+function ObjectEditor:toGridRight (x, y)
+	self.object.properties.x = x + self.object.properties.x - (self.object.properties.x+x)%64+64 - self.object.properties.w
+	self.object.properties.y = y + self.object.properties.y - (self.object.properties.y+y)%64+64 - self.object.properties.h
+end
+
+function ObjectEditor:toGrid (x, y)
+	local cx, cy
+	local ox, oy
+
+	ox = self.object.properties.x
+	oy = self.object.properties.y
+	cx = ox+x
+	cy = oy+y
+
+	-- 1st quadrant
+	if ox > cx and oy < cy then
+	end
+
+	-- 2nd quadrant
+	if ox < cx and oy < cy then
+	end
+
+	-- 3rd quadrant
+	if ox < cx and oy > cy then
+	end
+
+	-- 4th quadrant
+	if ox > cx and oy > cy then
+	end
+end
+
 function ObjectEditor:mouseUp (x, y)
 	if self.grabbing then
 		self.grabbing = false
@@ -244,133 +291,9 @@ function ObjectEditor:mouseUp (x, y)
 		self.moving = false
 	end
 
-	if self:isInside(self.object.properties.x, self.object.properties.y,
-					 self.object.properties.w, self.object.properties.h, x, y) then
-		local box = {
-			x = self.object.properties.x,
-			y = self.object.properties.y,
-			w = self.object.properties.w,
-			h = self.object.properties.h
-		}
-		local o,l
-		for l=1, #self.level.data.layers do
-			if self.level.data.layers[l].active then
-				for o=1, #self.level.data.layers[l].data do
-					if self.level.data.layers[l].data[o] ~= self.object then
-						if boxCollide(self.level.data.layers[l].data[o], box) then
-							local dx1 = (self.object.properties.x+self.object.properties.w)-(self.level.data.layers[l].data[o].properties.x)
-							local dx2 = (self.level.data.layers[l].data[o].properties.x+self.level.data.layers[l].data[o].properties.w)-(self.object.properties.x)
-							local dy1 = (self.object.properties.y+self.object.properties.h)-(self.level.data.layers[l].data[o].properties.y)
-							local dy2 = (self.level.data.layers[l].data[o].properties.y+self.level.data.layers[l].data[o].properties.h)-(self.object.properties.y)
-							local dx,dy
-
-							if dx1 > dx2 then
-								dx = dx2
-							else
-								dx = dx1
-							end
-
-							if dy1 > dy2 then
-								dy = dy2
-							else
-								dy = dy1
-							end
-
-							-- snap to border
-							--[=[if math.abs(dx) < math.abs(dy) then
-								self.object.properties.y = self.level.data.layers[l].data[o].properties.y
-								if dx1 < dx2 then
-									self.object.properties.x = self.level.data.layers[l].data[o].properties.x-self.object.properties.w
-								else
-									self.object.properties.x = self.level.data.layers[l].data[o].properties.x+self.level.data.layers[l].data[o].properties.w
-								end
-							else
-								self.object.properties.x = self.level.data.layers[l].data[o].properties.x
-								if dy1 < dy2 then
-									self.object.properties.y = self.level.data.layers[l].data[o].properties.y-self.object.properties.h
-								else
-									self.object.properties.y = self.level.data.layers[l].data[o].properties.y+self.level.data.layers[l].data[o].properties.h
-								end					
-							end
-							--]=]
-
-							-- snap to internal border
-							if math.abs(dx) < math.abs(dy) then																
-								if dx1 < dx2 then
-									if dx == dx1 then
-										if dy1 < dy2 then
-											self.object.properties.y = self.level.data.layers[l].data[o].properties.y
-										else
-											self.object.properties.y = self.level.data.layers[l].data[o].properties.y+self.level.data.layers[l].data[o].properties.h-self.object.properties.h
-										end
-									else
-										if dy1 > dy2 then
-											self.object.properties.y = self.level.data.layers[l].data[o].properties.y
-										else
-											self.object.properties.y = self.level.data.layers[l].data[o].properties.y+self.level.data.layers[l].data[o].properties.h-self.object.properties.h
-										end
-									end									
-
-									self.object.properties.x = self.level.data.layers[l].data[o].properties.x-self.object.properties.w
-								else
-									if dx == dx2 then
-										if dy1 < dy2 then
-											self.object.properties.y = self.level.data.layers[l].data[o].properties.y
-										else
-											self.object.properties.y = self.level.data.layers[l].data[o].properties.y+self.level.data.layers[l].data[o].properties.h-self.object.properties.h
-										end
-									else
-										if dy1 > dy2 then
-											self.object.properties.y = self.level.data.layers[l].data[o].properties.y
-										else
-											self.object.properties.y = self.level.data.layers[l].data[o].properties.y+self.level.data.layers[l].data[o].properties.h-self.object.properties.h
-										end
-									end									
-
-									self.object.properties.x = self.level.data.layers[l].data[o].properties.x+self.level.data.layers[l].data[o].properties.w
-								end
-							else
-								if dy1 < dy2 then
-									if dy == dy1 then
-										if dx1 < dx2 then
-											self.object.properties.x = self.level.data.layers[l].data[o].properties.x
-										else
-											self.object.properties.x = self.level.data.layers[l].data[o].properties.x+self.level.data.layers[l].data[o].properties.w-self.object.properties.w
-										end
-									else
-										if dx1 > dx2 then
-											self.object.properties.x = self.level.data.layers[l].data[o].properties.x
-										else
-											self.object.properties.x = self.level.data.layers[l].data[o].properties.x+self.level.data.layers[l].data[o].properties.w-self.object.properties.w
-										end
-									end									
-
-									self.object.properties.y = self.level.data.layers[l].data[o].properties.y-self.object.properties.h
-								else
-									if dy == dy2 then
-										if dx1 < dx2 then
-											self.object.properties.x = self.level.data.layers[l].data[o].properties.x
-										else
-											self.object.properties.x = self.level.data.layers[l].data[o].properties.x+self.level.data.layers[l].data[o].properties.w-self.object.properties.w
-										end
-									else
-										if dx1 > dx2 then
-											self.object.properties.x = self.level.data.layers[l].data[o].properties.x
-										else
-											self.object.properties.x = self.level.data.laxers[l].data[o].properties.x+self.level.data.laxers[l].data[o].properties.w-self.object.properties.w
-										end
-									end									
-
-									self.object.properties.y = self.level.data.layers[l].data[o].properties.y+self.level.data.layers[l].data[o].properties.h
-								end					
-							end
-
-							break
-						end
-					end
-				end
-			end
-		end
+	if self:selected() then
+		self:toGrid(self.object.properties.w/2,
+					self.object.properties.h/2)
 	end
 end
 
@@ -574,17 +497,7 @@ Module.mouseMove = mouseMove
 local function render (camera)
 	local i
 
---	for i=1,#selection do
---		local x,y,w,h
---
---		x = selection[i].properties.x
---		y = selection[i].properties.y
---		w = selection[i].properties.w
---		h = selection[i].properties.h
---
---		love.graphics.setColor (255,128,0,255)
---		love.graphics.rectangle('line', camera:getX(x), camera:getY(y), camera:getW(w), camera:getH(h))
---	end
+	drawGrid()
 
 	if beginBoxSelection then
 		love.graphics.setColor (0,128,255,255)
@@ -1273,6 +1186,20 @@ local function pasteSelection ()
 
 		MainLevel:addObject(newObject)
 	end	
+end
+
+function drawGrid ()
+	local x,y
+
+	love.graphics.setColor(0, 128, 128)
+
+	for x=0, love.window.getWidth(), 64 do
+		love.graphics.line (x, 0, x, love.window.getHeight())
+	end
+
+	for y=0, love.window.getHeight(), 64 do
+		love.graphics.line (0, y, love.window.getWidth(), y)
+	end
 end
 
 local function keyDown (key, isrepeat, camera)
