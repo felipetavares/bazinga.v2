@@ -7,7 +7,10 @@ Completely written in Lua with the Löve framework.
 About this release
 ------------------
 
-* Grid based editing (wip)
-    - Quadrant selection on mouse up (done)
-    - Quadrant selection calls grid alignment (wip)
+* Grid based editing (done)
+    - Bug when moving selection, it aligns some objects to the grid in the wrong way
+    - Configurable grid size & offset (next)
 * Ordered drawing (wip)
+    - Heap Sort (done)
+* Undo/Redo (next)
+* Layer up/down movement (next)

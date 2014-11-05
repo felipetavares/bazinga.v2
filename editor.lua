@@ -11,6 +11,13 @@ local selectionCopy = {}
 local ObjectEditor = {
 }
 
+local Grid = {
+	x = 0,
+	y = 0,
+	w = 64,
+	h = 64
+}
+
 local MainLevel = nil
 local MainCamera = nil
 
@@ -246,39 +253,114 @@ function ObjectEditor:selected()
 	return false
 end
 
-function ObjectEditor:toGridLeft (x, y)
-	self.object.properties.x = x + self.object.properties.x - (self.object.properties.x+x)%64
-	self.object.properties.y = y + self.object.properties.y - (self.object.properties.y+y)%64
+function ObjectEditor:toGrid3 (x, y)
+	local px, py
+
+	px = self.object.properties.x
+	py = self.object.properties.y
+
+	self.object.properties.x = x + px - (px+x-Grid.x)%Grid.w
+	self.object.properties.y = y + py - (py+y-Grid.y)%Grid.h
 end
 
-function ObjectEditor:toGridRight (x, y)
-	self.object.properties.x = x + self.object.properties.x - (self.object.properties.x+x)%64+64 - self.object.properties.w
-	self.object.properties.y = y + self.object.properties.y - (self.object.properties.y+y)%64+64 - self.object.properties.h
+function ObjectEditor:toGrid1 (x, y)
+	local px, py, pw, ph
+
+	px = self.object.properties.x
+	py = self.object.properties.y
+	pw = self.object.properties.w
+	ph = self.object.properties.h
+
+	self.object.properties.x = x + px - (px+x-Grid.x)%Grid.w+Grid.w - pw
+	self.object.properties.y = y + py - (py+y-Grid.y)%Grid.h+Grid.h - ph
+end
+
+function ObjectEditor:toGrid2 (x, y)
+	local px, py, pw, ph
+
+	px = self.object.properties.x
+	py = self.object.properties.y
+	pw = self.object.properties.w
+	ph = self.object.properties.h
+
+	self.object.properties.x = x + px - (px+x-Grid.x)%Grid.w
+	self.object.properties.y = y + py - (py+y-Grid.y)%Grid.h+Grid.h - ph
+end
+
+function ObjectEditor:toGrid4 (x, y)
+	local px, py, pw, ph
+
+	px = self.object.properties.x
+	py = self.object.properties.y
+	pw = self.object.properties.w
+	ph = self.object.properties.h
+
+	self.object.properties.x = x + px - (px+x-Grid.x)%Grid.w+Grid.w - pw
+	self.object.properties.y = y + py - (py+y-Grid.y)%Grid.h
 end
 
 function ObjectEditor:toGrid (x, y)
 	local cx, cy
 	local ox, oy
+	local d, l, q
+
+	local q1 = {
+		x = math.sqrt(2),
+		y = math.sqrt(2)
+	}
+
+	local q2 = {
+		x = -math.sqrt(2),
+		y = math.sqrt(2)
+	}
+
+	local q3 = {
+		x = -math.sqrt(2),
+		y = -math.sqrt(2)
+	}
+
+	local q4 = {
+		x = math.sqrt(2),
+		y = -math.sqrt(2)
+	}
 
 	ox = self.object.properties.x
 	oy = self.object.properties.y
-	cx = ox+x
-	cy = oy+y
+	cx = ox-(ox-Grid.x)%Grid.w+Grid.w/2
+	cy = oy-(oy-Grid.y)%Grid.h+Grid.h/2
 
-	-- 1st quadrant
-	if ox > cx and oy < cy then
+	-- Find direction vector
+	d = {
+		x = cx-ox,
+		y = cy-oy
+	}
+
+	-- Initialize l with an array and q with an array of quadrants
+	l = {}
+	q = {
+		q1, q2, q3, q4
+	}
+
+	local quad
+
+	for quad=1, #q do
+		l[quad] = vmath.dot(q[quad], d)
 	end
 
-	-- 2nd quadrant
-	if ox < cx and oy < cy then
+	if l[1] < l[2] and l[1] < l[3] and l[1] < l[4] then
+		self:toGrid1(x, y)
 	end
 
-	-- 3rd quadrant
-	if ox < cx and oy > cy then
+	if l[2] < l[1] and l[2] < l[3] and l[2] < l[4] then
+		self:toGrid2(x, y)
 	end
 
-	-- 4th quadrant
-	if ox > cx and oy > cy then
+	if l[3] < l[2] and l[3] < l[1] and l[3] < l[4] then
+		self:toGrid3(x, y)
+	end
+
+	if l[4] < l[2] and l[4] < l[3] and l[4] < l[1] then
+		self:toGrid4(x, y)
 	end
 end
 
@@ -1053,6 +1135,67 @@ local function onNewLayer (container)
 	updateLayersList(container)
 end
 
+local function onGridAlign (nothing)
+	if #selection > 0 then
+		Grid.x = selection[1].object.properties.x
+		Grid.y = selection[1].object.properties.y
+	end
+end
+
+local function openGridWindow ()
+	local c1,c2,c3,c4
+	local b1,b2
+	local bar,entry
+
+	window = gui.Window:new()
+
+	c1 = gui.VContainer:new()
+	c2 = gui.HContainer:new()
+	c3 = gui.HContainer:new()
+	c4 = gui.VContainer:new()
+
+	c1:begin()
+	c2:begin()
+	c3:begin()
+	c4:begin()
+
+	--bar = gui.ScrollBar:new()
+	--bar:begin('vertical')
+	--bar:scrollContainer(c4)
+	--bar.fixedW = 24
+
+	--entry = gui.TextBox:new()
+	--entry:begin()
+	--entry.fixedH = 24
+
+	b1 = gui.Button:new('Align')
+	b1:begin(onGridAlign)
+	--b1.userData = window
+	b1.fixedH = 50
+
+	b2 = gui.Button:new('Close')
+	b2:begin(onSaveCancel)
+	b2.userData = c4
+	b2.fixedH = 50
+
+	c1:addWidget(b1)
+	c1:addWidget(b2)
+	--c1:addWidget(c3)
+
+	--c2:addWidget(c4)
+	--c2:addWidget(bar)
+
+	--c3.fixedH = 48
+	--c3:addWidget(b1)
+	--c3:addWidget(b2)
+
+	--updateLayersList(c4)
+
+	window:setRootContainer(c1)
+
+	gui.addWindow(window)
+end
+
 local function openLayersWindow ()
 	local c1,c2,c3,c4
 	local b1,b2
@@ -1193,11 +1336,11 @@ function drawGrid ()
 
 	love.graphics.setColor(0, 128, 128)
 
-	for x=0, love.window.getWidth(), 64 do
+	for x=(MainCamera:getX(0)+Grid.x)%Grid.w, love.window.getWidth(), Grid.w do
 		love.graphics.line (x, 0, x, love.window.getHeight())
 	end
 
-	for y=0, love.window.getHeight(), 64 do
+	for y=(MainCamera:getY(0)+Grid.y)%Grid.h, love.window.getHeight(), Grid.h do
 		love.graphics.line (0, y, love.window.getWidth(), y)
 	end
 end
@@ -1279,6 +1422,10 @@ local function keyDown (key, isrepeat, camera)
 
 	if key == 'f5' and not window then
 		openAboutWindow()
+	end
+
+	if key == 'f6' and not window then
+		openGridWindow()
 	end
 end
 Module.keyDown = keyDown

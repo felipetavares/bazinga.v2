@@ -21,6 +21,7 @@ function love.load ()
 	editor 	= love.filesystem.load('editor.lua')()
 	cache 	= love.filesystem.load('cache.lua')()
 	heap	= love.filesystem.load('sort.lua')()
+	vmath	= love.filesystem.load('vmath.lua')()
 
 	love.graphics.setFont (
 		love.graphics.newFont("Schoolbell.ttf", 16)
