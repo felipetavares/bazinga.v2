@@ -37,13 +37,17 @@ function p (node)
 	return math.floor (node/2)
 end
 
+function defaultOrder (x, y)
+	return x > y
+end
+
 -- Heapfy (sometimes called 'sink')
 function heapHeapfy (heap, heapsize, root)
 	local buffer
 	local lc
 	
 	-- Picks the largest child
-	if r(heap, heapsize, root) > l(heap, heapsize, root) then
+	if Module.order(r(heap, heapsize, root), l(heap, heapsize, root)) then
 		lc = rs(root)
 	else
 		lc = ls(root)
@@ -52,7 +56,7 @@ function heapHeapfy (heap, heapsize, root)
 	-- If we do have children
 	if lc <= heapsize then
 		-- Compares the largest child to myself, if greater, swap
-		if heap[lc] > heap[root] then
+		if Module.order(heap[lc],heap[root]) then
 			buffer = heap[root]
 			heap[root] = heap[lc]
 			heap[lc] = buffer
@@ -90,4 +94,6 @@ function heapSort (array)
 end
 
 Module.sort = heapSort
+Module.order = defaultOrder
+
 return Module

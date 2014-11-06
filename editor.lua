@@ -15,7 +15,8 @@ local Grid = {
 	x = 0,
 	y = 0,
 	w = 64,
-	h = 64
+	h = 64,
+	active = false
 }
 
 local MainLevel = nil
@@ -300,6 +301,10 @@ function ObjectEditor:toGrid4 (x, y)
 end
 
 function ObjectEditor:toGrid (x, y)
+	if not Grid.active then
+		return
+	end
+
 	local cx, cy
 	local ox, oy
 	local d, l, q
@@ -579,7 +584,9 @@ Module.mouseMove = mouseMove
 local function render (camera)
 	local i
 
-	drawGrid()
+	if Grid.active then
+		drawGrid()
+	end
 
 	if beginBoxSelection then
 		love.graphics.setColor (0,128,255,255)
@@ -1142,17 +1149,31 @@ local function onGridAlign (nothing)
 	end
 end
 
+local function onGridToggle (data, active)
+	Grid.active = active
+end
+
+local function onGridClose (data)
+	if isNumber(data.w.text) and isNumber (data.h.text) then
+		Grid.w = tonumber (data.w.text)
+		Grid.h = tonumber (data.h.text)
+	end
+
+	window:close()
+	window = nil
+end
+
 local function openGridWindow ()
-	local c1,c2,c3,c4
+	local c1,c2,c3,c4,ch1
 	local b1,b2
 	local bar,entry
 
 	window = gui.Window:new()
 
 	c1 = gui.VContainer:new()
-	c2 = gui.HContainer:new()
+	c2 = gui.VContainer:new()
 	c3 = gui.HContainer:new()
-	c4 = gui.VContainer:new()
+	c4 = gui.HContainer:new()
 
 	c1:begin()
 	c2:begin()
@@ -1173,23 +1194,43 @@ local function openGridWindow ()
 	--b1.userData = window
 	b1.fixedH = 50
 
-	b2 = gui.Button:new('Close')
-	b2:begin(onSaveCancel)
-	b2.userData = c4
+	b2 = gui.Button:new('Ok')
+	b2:begin(onGridClose)
+	b2.userData = {}
 	b2.fixedH = 50
 
+	ch1 = gui.CheckBox:new('Active')
+	ch1:begin(onGridToggle)
+	ch1.fixedH = 50
+	ch1.checked = Grid.active
+
+	c1:addWidget(ch1)
+	c1:addWidget(c2)
+	c2:addWidget(c3)
+	c2:addWidget(c4)
 	c1:addWidget(b1)
 	c1:addWidget(b2)
-	--c1:addWidget(c3)
 
-	--c2:addWidget(c4)
-	--c2:addWidget(bar)
+	local w1,e1
+	w1 = gui.Widget:new('w')
+	w1.fixedW = 24
+	e1 = gui.TextBox:new()
+	e1:begin()
+	e1.text = tostring (Grid.w)
+	b2.userData.w = e1
 
-	--c3.fixedH = 48
-	--c3:addWidget(b1)
-	--c3:addWidget(b2)
+	c3:addWidget (w1)
+	c3:addWidget (e1)
 
-	--updateLayersList(c4)
+	w1 = gui.Widget:new('h')
+	w1.fixedW = 24
+	e1 = gui.TextBox:new()
+	e1:begin()
+	e1.text = tostring (Grid.h)
+	b2.userData.h = e1
+
+	c4:addWidget (w1)
+	c4:addWidget (e1)
 
 	window:setRootContainer(c1)
 

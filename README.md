@@ -9,8 +9,8 @@ About this release
 
 * Grid based editing (done)
     - Bug when moving selection, it aligns some objects to the grid in the wrong way
-    - Configurable grid size & offset (next)
-* Ordered drawing (wip)
+    - Configurable grid size & offset (done)
+* Ordered drawing (done)
     - Heap Sort (done)
 * Undo/Redo (next)
 * Layer up/down movement (next)

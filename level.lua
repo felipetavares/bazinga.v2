@@ -21,6 +21,7 @@ function Object:new (x, y)
 			y = 0,
 			w = 16,
 			h = 16,
+			z = 0,
 			name = 'unamed',
 		}
 	}
@@ -268,9 +269,33 @@ end
 function Level:render (camera)
 	--print (#self.data.layers[1].data)
 
+	heap.order = function (x, y)
+		if x == -1 then
+			return false
+		end
+		if y == -1 then
+			return true
+		end
+
+		local xc, yc
+		xc = x.properties.y+x.properties.h
+		yc = y.properties.y+y.properties.h
+
+		if x.properties.z then
+			xc = xc - x.properties.z
+		end
+
+		if y.properties.z then
+			yc = yc - y.properties.z
+		end
+
+		return xc < yc
+	end
+
 	local l,o
 	for l=1, #self.data.layers do
 		if self.data.layers[l].visible then
+			heap.sort (self.data.layers[l].data)
 			for o=1, #self.data.layers[l].data do
 				self.data.layers[l].data[o]:render(camera)
 			end

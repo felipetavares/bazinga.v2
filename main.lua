@@ -1,6 +1,8 @@
 function love.load ()
 	print ('bazinga.v2')
 
+	love.window.setIcon (love.image.newImageData('assets/images/icon.png'))
+
 	--love.window.setMode(0, 0, {fullscreen=true, resizable=false})
 	love.window.setMode(800, 600, {fullscreen=false, resizable=true})
 

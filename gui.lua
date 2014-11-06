@@ -499,7 +499,7 @@ function CheckBox:render ()
 									 self.w-2, self.h-2)
 
 	love.graphics.setColor (0, 0, 0, 255)
-	love.graphics.print (self.name, self.x, self.y+self.h/2-8)
+	love.graphics.print (self.name, self.x+self.w/2-love.graphics.getFont():getWidth(self.name)/2, self.y+self.h/2-8)
 
 	if self.focused then
 		love.graphics.setColor (255, 0, 0, 255)
