@@ -1,0 +1,11 @@
+Everything draw-related is called
+	-- render
+
+Everything step/update-related is called
+	-- update
+
+Constructors/factory are called
+	-- new
+
+Start/Load/Begin are called
+	-- begin

@@ -371,16 +371,19 @@ end
 
 function ObjectEditor:mouseUp (x, y)
 	if self.grabbing then
+		MainLevel:markInHistory()
 		self.grabbing = false
 	end
 
 	if self.moving then
+		MainLevel:markInHistory()
 		self.moving = false
 	end
 
 	if self:selected() then
 		self:toGrid(self.object.properties.w/2,
 					self.object.properties.h/2)
+		MainLevel:markInHistory()
 	end
 end
 
@@ -417,6 +420,8 @@ function ObjectEditor:delete ()
 	self.level:selectLayer(self.level:getLayerIndex(self.layer))
 	self.level:selectObject(self.layer:getObjectIndex(self.object))
 	self.level:removeObject()
+
+	MainLevel:markInHistory()
 end
 
 local function collide (object, x, y)
@@ -917,6 +922,8 @@ local function onNewObject (object)
 
 	copiedObject = objectCopy(object)
 
+	MainLevel:markInHistory()
+
 	window:close()
 	window = nil
 end
@@ -943,6 +950,8 @@ local function onAddObject ()
 	if objectEditor then
 		table.insert(objectsList,objectCopy(objectEditor.object))
 	end
+
+	MainLevel:markInHistory()
 
 	window:close()
 	window = nil
@@ -1018,6 +1027,8 @@ function onDeleteLayer (data)
 	MainLevel:selectLayer(data.l)
 	MainLevel:removeLayer()
 
+	MainLevel:markInHistory()
+
 	updateLayersList(data.container)
 end
 
@@ -1025,6 +1036,8 @@ function onRenameOkay (data)
 	MainLevel.data.layers[data.l].name = data.e.text
 
 	updateLayersList(data.container)
+
+	MainLevel:markInHistory()
 
 	data.window:close()
 end
@@ -1066,6 +1079,7 @@ end
 
 function onVisibleLayer (data, checked)
 	MainLevel.data.layers[data.l].visible = checked
+	MainLevel:markInHistory()
 	updateLayersList(data.container)
 end
 
@@ -1140,6 +1154,7 @@ end
 local function onNewLayer (container)
 	MainLevel:addLayer (level.Layer:new())
 	updateLayersList(container)
+	MainLevel:markInHistory()
 end
 
 local function onGridAlign (nothing)
@@ -1329,6 +1344,8 @@ local function groupHorizontally ()
 		selection[s].object.properties.x = minX+((maxX-minX)-sw)/#selection*(s-1)+p
 		p = p+selection[s].object.properties.w
 	end
+
+	MainLevel:markInHistory()
 end
 
 local function bookmarkObject (object)
@@ -1370,6 +1387,8 @@ local function pasteSelection ()
 
 		MainLevel:addObject(newObject)
 	end	
+
+	MainLevel:markInHistory()
 end
 
 function drawGrid ()
@@ -1433,6 +1452,14 @@ local function keyDown (key, isrepeat, camera)
 		camera.sy = 4 
 	end
 
+	if key == 'z' and love.keyboard.isDown('lctrl') and not love.keyboard.isDown('lshift') then
+		MainLevel:undo()
+	end
+
+	if key == 'z' and love.keyboard.isDown('lctrl') and love.keyboard.isDown('lshift') then
+		MainLevel:redo()
+	end
+
 	if key == 'n' and love.keyboard.isDown('lctrl') then
 		-- Add a new object at mouse position
 		local newObject
@@ -1447,6 +1474,8 @@ local function keyDown (key, isrepeat, camera)
 		newObject.properties.y = code.MainCamera:getIY(love.mouse.getY())
 
 		MainLevel:addObject(newObject)
+
+		MainLevel:markInHistory()
 	end
 
 	if key == 'f2' and not window then

@@ -1,0 +1,1285 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"re",
+				"rectangle"
+			],
+			[
+				"sel",
+				"selection"
+			],
+			[
+				"Mai",
+				"MainCamera"
+			],
+			[
+				"Ma",
+				"MainCamera"
+			],
+			[
+				"props",
+				"properties"
+			],
+			[
+				"new",
+				"newObject"
+			],
+			[
+				"obj",
+				"objectEditor"
+			],
+			[
+				"object",
+				"objectsList"
+			],
+			[
+				"prop",
+				"properties"
+			],
+			[
+				"obje",
+				"objectCopy"
+			],
+			[
+				"add",
+				"onAddObject"
+			],
+			[
+				"upda",
+				"updateObjectsList"
+			],
+			[
+				"focus",
+				"focusedWindow"
+			],
+			[
+				"focuse",
+				"focusedWindow"
+			],
+			[
+				"get",
+				"getFocused"
+			],
+			[
+				"fod",
+				"focusedWidget"
+			],
+			[
+				"save",
+				"onSaveCancel"
+			],
+			[
+				"fix",
+				"fixedW"
+			],
+			[
+				"fixed",
+				"fixedH"
+			],
+			[
+				"scroll",
+				"scrollContainer"
+			],
+			[
+				"uo",
+				"updateGUIProps"
+			],
+			[
+				"Pro",
+				"propList"
+			],
+			[
+				"pr",
+				"propList"
+			],
+			[
+				"cur",
+				"cursor"
+			],
+			[
+				"cursor",
+				"cursorPosition"
+			],
+			[
+				"onPr",
+				"onPropsOkay"
+			],
+			[
+				"onP",
+				"onPropsApply"
+			],
+			[
+				"key",
+				"keyDown"
+			],
+			[
+				"grab",
+				"grabPosition"
+			],
+			[
+				"gra",
+				"grabbing"
+			],
+			[
+				"m",
+				"mouseUp"
+			],
+			[
+				"is",
+				"isVisible"
+			],
+			[
+				"buton",
+				"buttoncontainer"
+			],
+			[
+				"entry",
+				"entrycontainer"
+			],
+			[
+				"but",
+				"buttoncontainer"
+			],
+			[
+				"text",
+				"textEntry"
+			],
+			[
+				"en",
+				"entry"
+			],
+			[
+				"tex",
+				"textEntry"
+			],
+			[
+				"files",
+				"filesystem"
+			],
+			[
+				"findLas",
+				"findLastUpper"
+			],
+			[
+				"last",
+				"lastdir"
+			],
+			[
+				"getW",
+				"getWorkingDirectory"
+			],
+			[
+				"file",
+				"filesystem"
+			],
+			[
+				"wi",
+				"window"
+			],
+			[
+				"mouse",
+				"mouseInside"
+			],
+			[
+				"mainc",
+				"maincontainer"
+			],
+			[
+				"unfixed",
+				"unfixedH"
+			],
+			[
+				"unfi",
+				"unfixedN"
+			],
+			[
+				"un",
+				"unfixedW"
+			],
+			[
+				"lin",
+				"linkedContainer"
+			],
+			[
+				"set",
+				"setFocus"
+			],
+			[
+				"inver",
+				"invertWidgets"
+			],
+			[
+				"wid",
+				"widgets"
+			],
+			[
+				"widgets",
+				"invertWindgets"
+			],
+			[
+				"ge",
+				"getWidth"
+			],
+			[
+				"particl",
+				"particles"
+			],
+			[
+				"player",
+				"playerAnimationFrame"
+			],
+			[
+				"tur",
+				"tutorialTime"
+			],
+			[
+				"tutorial",
+				"tutorialTime"
+			],
+			[
+				"anim",
+				"playerAnimationFrame"
+			],
+			[
+				"play",
+				"playAnim"
+			],
+			[
+				"pla",
+				"playerChangeFrame"
+			],
+			[
+				"Cons",
+				"ConstantInterpolator"
+			],
+			[
+				"i",
+				"Interpolator"
+			],
+			[
+				"next",
+				"nextX"
+			],
+			[
+				"ht",
+				"html5"
+			],
+			[
+				"res",
+				"restore"
+			],
+			[
+				"floo",
+				"floorPatter"
+			],
+			[
+				"exp",
+				"explode"
+			],
+			[
+				"render",
+				"renderClouds"
+			],
+			[
+				"expl",
+				"explode"
+			],
+			[
+				"dial",
+				"dialogNumber"
+			],
+			[
+				"dia",
+				"dialogNumber"
+			],
+			[
+				"po",
+				"positionAtDialog"
+			],
+			[
+				"fill",
+				"fillStyle"
+			],
+			[
+				"bo",
+				"bomb"
+			],
+			[
+				"com",
+				"combo"
+			],
+			[
+				"My",
+				"myScore"
+			],
+			[
+				"lister",
+				"listenerUp"
+			],
+			[
+				"hit",
+				"hitNum"
+			],
+			[
+				"con",
+				"continuousPeriod"
+			],
+			[
+				"las",
+				"lastBombUpdate"
+			],
+			[
+				"nex",
+				"nextY"
+			],
+			[
+				"bom",
+				"bombNear"
+			],
+			[
+				"can",
+				"canMoveTo"
+			],
+			[
+				"parti",
+				"particles"
+			],
+			[
+				"s",
+				"systems"
+			],
+			[
+				"explode",
+				"explodeTile"
+			],
+			[
+				"border",
+				"border-left"
+			],
+			[
+				"tempo",
+				"tempoInicial"
+			],
+			[
+				"tmpo",
+				"tempoInicial"
+			],
+			[
+				"expoo",
+				"explosoes"
+			],
+			[
+				"Explo",
+				"Explosao"
+			],
+			[
+				"ma",
+				"Math"
+			],
+			[
+				"cre",
+				"creditos"
+			],
+			[
+				"credi",
+				"creditoAtual"
+			],
+			[
+				"TP_",
+				"TP_PAREDE"
+			],
+			[
+				"ca",
+				"carregar"
+			],
+			[
+				"pri",
+				"private"
+			],
+			[
+				"al",
+				"altura"
+			],
+			[
+				"Cred",
+				"CreditosIniciais"
+			],
+			[
+				"dese",
+				"desenhaTextoCentrado"
+			],
+			[
+				"I",
+				"IOException"
+			],
+			[
+				"cred",
+				"creditosIniciais"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"buffer",
+				"buffer_b"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "dkjson.lua",
+			"settings":
+			{
+				"buffer_size": 22416,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "bazinga.v2.text",
+			"settings":
+			{
+				"buffer_size": 177,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "main.lua",
+			"settings":
+			{
+				"buffer_size": 991,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "cache.lua",
+			"settings":
+			{
+				"buffer_size": 307,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "editor.lua",
+			"settings":
+			{
+				"buffer_size": 14264,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "level.lua",
+			"settings":
+			{
+				"buffer_size": 4567,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "camera.lua",
+			"settings":
+			{
+				"buffer_size": 865,
+				"line_ending": "Unix",
+				"name": "local Module"
+			}
+		},
+		{
+			"file": "gui.lua",
+			"settings":
+			{
+				"buffer_size": 19002,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "utf8.lua",
+			"settings":
+			{
+				"buffer_size": 4738,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "code.lua",
+			"settings":
+			{
+				"buffer_size": 1938,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/philips/development/bazinga.v2/code(with gui).lua",
+		"/home/philips/development/gift.mateus.gf/main.lua",
+		"/home/philips/development/bazinga.v2/utf8.lua",
+		"/home/philips/development/bazinga.v2/level.lua",
+		"/home/philips/development/bazinga.v2/levels/map01.json",
+		"/home/philips/development/bazinga.v2/dkjson.lua",
+		"/home/philips/software/windows/7zsfx/config.txt",
+		"/home/philips/development/gift.mateus.gf/maps/mapgame.json",
+		"/home/philips/development/gift.mateus.gf/maps/test.json",
+		"/home/philips/development/gift.mateus.gf/maps/map2.json",
+		"/home/philips/development/webdomino/web/main.js",
+		"/home/philips/development/JSEngine2/web/main.js",
+		"/home/philips/development/JSEngine2/web/modules/math.js",
+		"/home/philips/development/JSEngine2/web/modules/map.js",
+		"/home/philips/development/JSEngine2/README.md",
+		"/home/philips/development/bomberman/web/modules/assets.js",
+		"/home/philips/development/bomberman/web/css/UI.css",
+		"/home/philips/development/bomberman/web/assets/images/floor/floor.png",
+		"/home/philips/development/JSEngine/modules/render.js",
+		"/home/philips/development/JSEngine/main.js",
+		"/home/philips/development/bomberman/web/html5.js",
+		"/home/philips/development/bomberman/web/modules/ui.js",
+		"/home/philips/development/bomberman/web/modules/animation.js",
+		"/home/philips/development/bomberman/web/modules/character.js",
+		"/home/philips/development/bomberman/web/main-sat.html",
+		"/home/philips/development/bomberman/web/modules/render.js",
+		"/home/philips/development/bomberman/web/backup.js",
+		"/home/philips/development/bomberman/web/jquery.js",
+		"/home/philips/development/bomberman/web/assets/list.js",
+		"/home/philips/development/bomberman/web/modules/list.js",
+		"/home/philips/development/bomberman/web/style.css",
+		"/home/philips/development/bomberman/web/main.html",
+		"/home/philips/development/bomberman/web/main.js",
+		"/home/philips/development/JSEngine/main.html",
+		"/home/philips/development/bomberman/web/game.js",
+		"/home/philips/development/bomberman/web/game.html",
+		"/home/philips/development/bomberman/web/physics.js",
+		"/home/philips/music/MIDI/experiments/The Bard's Song.csv",
+		"/home/philips/development/bomberman/bazingafive/bomberman/telas/Bomberman.java",
+		"/home/philips/development/ccsl/samanau_sat/trunk/hallib/hallib.c",
+		"/home/philips/development/bomberman/bazingafive/bomberman/Test.java",
+		"/home/philips/development/ccsl/projeto_samanau/branches/v1.0/js/drawgraph.js",
+		"/home/philips/development/ccsl/projeto_samanau/branches/v1.0/js/graph.js",
+		"/home/philips/development/ccsl/projeto_samanau/branches/v1.0/js/interpolation.js",
+		"/home/philips/development/bomberman/bazingafive/bomberman/janela",
+		"/home/philips/documents/school/prog/hq/story/Story.java",
+		"/home/philips/development/hourgame/html5.js/physics.js",
+		"/home/philips/development/hourgame/html5.js/html5.js",
+		"/home/philips/development/hourgame/html5.js/game.html",
+		"/home/philips/development/hourgame/html5.js/game.js",
+		"/home/philips/development/bomberman/bazingafive/bomberman/telas/Tela.java",
+		"/home/philips/development/bomberman/bazingafive/bomberman/telas/Menu.java",
+		"/home/philips/development/bomberman/bazingafive/bomberman/telas/Instrucoes.java",
+		"/home/philips/development/bomberman/bazingafive/bomberman/telas/Creditos.java",
+		"/home/philips/development/bomberman/bazingafive/bomberman/Jogo.java",
+		"/home/philips/development/bomberman/basingafive/bomberman/telas/Bomberman.java",
+		"/home/philips/development/bomberman/basingafive/bomberman/telas/Creditos.java",
+		"/home/philips/development/bomberman/basingafive/bomberman/telas/Instrucoes.java",
+		"/home/philips/development/bomberman/basingafive/bomberman/telas/Menu.java",
+		"/home/philips/development/bomberman/basingafive/bomberman/telas/Tela.java",
+		"/home/philips/development/bomberman/basingafive/bomberman/Jogo.java",
+		"/home/philips/development/bomberman/basingafive/Tela.java",
+		"/home/philips/development/bomberman/basingafive/Instrucoes.java",
+		"/home/philips/development/bomberman/basingafive/Creditos.java",
+		"/home/philips/development/bomberman/basingafive/Bomberman.java",
+		"/home/philips/development/bomberman/basingafive/Jogo.java",
+		"/home/philips/development/bomberman/basingafive/Menu.java",
+		"/home/philips/documents/school/prog/hq/Espada.java",
+		"/home/philips/documents/school/prog/hq/Cajado.java",
+		"/home/philips/documents/school/prog/hq/Colt.java",
+		"/home/philips/documents/school/prog/hq/Arma.java",
+		"/home/philips/documents/school/prog/hq/Story.java",
+		"/home/philips/documents/school/prog/hq/Personagem.java",
+		"/home/philips/development/ccsl/ijs/js/I.js",
+		"/home/philips/documents/school/prog/hq/Jogador.java",
+		"/home/philips/development/ccsl/ijs/ijs.html",
+		"/home/philips/development/ccsl/ijs/css/style.css",
+		"/home/philips/development/ccsl/samanau_sat/trunk/ard_hallib/complete.with.sensors/arduino/satellite.h",
+		"/home/philips/development/ccsl/samanau_sat/trunk/ard_hallib/complete.with.sensors/arduino/satellite.cpp",
+		"/home/philips/development/ccsl/samanau_sat/trunk/ard_hallib/complete.with.sensors/arduino/hallib.h",
+		"/home/philips/development/ccsl/samanau_sat/trunk/ard_hallib/complete.with.sensors/arduino/hallib.cpp",
+		"/home/philips/development/ccsl/samanau_sat/trunk/ard_hallib/complete.with.sensors/arduino/device.h",
+		"/home/philips/development/ccsl/samanau_sat/trunk/ard_hallib/messages.ino",
+		"/home/philips/development/ccsl/samanau_sat/trunk/ard_hallib/complete.with.sensors/arduino/arduino.ino",
+		"/home/philips/development/ccsl/samanau_sat/trunk/ard_hallib/hallib/hallib.cpp",
+		"/home/philips/development/ccsl/samanau_sat/trunk/ard_hallib/hallib/hallib.h",
+		"/home/philips/development/ccsl/samanau_sat/trunk/ard_hallib/complete.with.sensors/arduino/ligth_driver.h",
+		"/home/philips/development/ccsl/samanau_sat/trunk/ard_hallib/complete.with.sensors/arduino.ino",
+		"/home/philips/development/ccsl/samanau_sat/trunk/ard_hallib/complete.with.sensors/scommp.cpp",
+		"/home/philips/development/ccsl/samanau_sat/trunk/ard_hallib/complete.with.sensors/scommp.h",
+		"/home/philips/development/ccsl/samanau_sat/trunk/ard_hallib/complete.with.sensors/satellite.cpp",
+		"/home/philips/development/ccsl/samanau_sat/trunk/ard_hallib/complete.with.sensors/satellite.h",
+		"/home/philips/development/ccsl/samanau_sat/trunk/ard_hallib/complete.with.sensors/limits.h",
+		"/home/philips/development/ccsl/projeto_samanau/trunk/arduino/arduino.ino",
+		"/home/philips/development/ccsl/ijs/jquery.js",
+		"/home/philips/development/ccsl/ijs/js/I.js~"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"/home/philips/development/bomberman/web",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"y",
+			"x",
+			"mouseUp",
+			"x",
+			"onAddObject",
+			"widget:render",
+			"mousemove",
+			"bringUp",
+			"bringUp\\(w\\)",
+			"window:isinside",
+			"editor",
+			"openFileWindow",
+			"cancel",
+			"list",
+			"Button",
+			"PropsNew",
+			".x",
+			".w",
+			".x",
+			" or ",
+			"or ",
+			"or",
+			"print",
+			"combine",
+			"print",
+			".w",
+			".x",
+			"widget:render",
+			"container:render",
+			"\\.w",
+			"\\.x",
+			"scissor",
+			"textbox",
+			"sub",
+			"open",
+			"space",
+			"lctrl",
+			"d(x|y)",
+			"object.properties.",
+			" ([x|y])",
+			"mouseDown",
+			"mouseDOwn",
+			"mouseUp",
+			"select",
+			"V",
+			"mouseUp",
+			"button",
+			"not self.isVisible",
+			"button",
+			"131",
+			"Button",
+			"border",
+			"folder",
+			"Button",
+			"mouseDown",
+			"container:invalid",
+			"Container:invalidate",
+			"invalidate",
+			"Container:inval",
+			"VContain",
+			"leave",
+			"- 2",
+			":resize",
+			"setSci",
+			"checkbox",
+			"CheckBox",
+			"0.5",
+			"setColor",
+			"Container:inval",
+			"invalidate",
+			"Container",
+			"resize",
+			"getX",
+			"Container:update",
+			"Container:",
+			":resize",
+			"HConta",
+			"VCon",
+			"Container:",
+			"scissor",
+			"widget",
+			"Container:",
+			"container:invalidade",
+			"Widget:render",
+			"print",
+			"ScrollBar",
+			"TextBox",
+			"Widget:render",
+			"stroke",
+			"widget:inp",
+			"input",
+			"focus",
+			":focus",
+			"Container",
+			"widget:render",
+			"Container",
+			"invertWid",
+			"window",
+			"Down",
+			"w",
+			"mouseDown",
+			"mouseUp",
+			"obj",
+			"<",
+			"x",
+			"layer",
+			"x",
+			"particle",
+			":set",
+			"playerAni",
+			"gameEnd",
+			"1",
+			"noSpace",
+			"space",
+			"force",
+			"ongrou",
+			"t",
+			"pyi",
+			"pxi",
+			"translate",
+			"x",
+			"\\[0",
+			"0",
+			"Glass",
+			"Page",
+			"client",
+			"offset",
+			"Player"
+		],
+		"highlight": true,
+		"in_selection": true,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"h",
+			"w",
+			"y",
+			"gui.bringUp(w)",
+			".y",
+			".h",
+			".y",
+			".h",
+			".y",
+			".h",
+			".y",
+			"utf8sub",
+			" ",
+			"space",
+			"p$1",
+			"",
+			" d$1",
+			"mouseMove",
+			"mouseUp",
+			"mouseDown",
+			"mouseUp",
+			"",
+			"select",
+			"load",
+			"self.isVisible",
+			"cancel",
+			"goBack",
+			"button",
+			"Button",
+			"CheckBox",
+			"ScrollBar",
+			"line",
+			"HContainer",
+			"VContainer",
+			"Window",
+			"container",
+			"Up",
+			"h",
+			"mouseMove",
+			"mouseUp",
+			"mouseMove",
+			"y",
+			"object",
+			"y",
+			"noJump",
+			"syi",
+			"sxi",
+			"scale",
+			"y",
+			"[1",
+			"1",
+			"page",
+			"Page",
+			"client",
+			"boy",
+			"this.A",
+			"false",
+			"prevent",
+			"A",
+			"[this.y",
+			"[this.x",
+			"cloud",
+			"Cutscene",
+			"floor",
+			"wall",
+			"tales",
+			"hc",
+			"hb",
+			"GameMenu",
+			"this.particles",
+			"(map,",
+			"this.explode",
+			"",
+			"bomb",
+			"map",
+			"objetos",
+			"32",
+			"Mapa mapa, Bomberman bomberman) {",
+			"getComprimento",
+			"comprimento",
+			"$1, Mapa mapa)",
+			"Bomba",
+			"Piso",
+			"piso",
+			"getObjetos",
+			"executado",
+			"7",
+			"8",
+			"16",
+			"Menu",
+			"entrada",
+			"bazinga",
+			"Bomberman",
+			"Creditos",
+			"Instrucoes",
+			"%",
+			"li",
+			"this.$1",
+			"x1",
+			"SATELLITE",
+			"this.jDiv"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 4,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "dkjson.lua",
+					"settings":
+					{
+						"buffer_size": 22416,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2178,
+								2178
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "bazinga.v2.text",
+					"settings":
+					{
+						"buffer_size": 177,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								177,
+								177
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "main.lua",
+					"settings":
+					{
+						"buffer_size": 991,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								48,
+								48
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "cache.lua",
+					"settings":
+					{
+						"buffer_size": 307,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								170,
+								170
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"syntax": "Packages/Lua/Lua.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "editor.lua",
+					"settings":
+					{
+						"buffer_size": 14264,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6941,
+								6941
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 4462.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "level.lua",
+					"settings":
+					{
+						"buffer_size": 4567,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								293,
+								293
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 165.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "camera.lua",
+					"settings":
+					{
+						"buffer_size": 865,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								61,
+								61
+							]
+						],
+						"settings":
+						{
+							"auto_name": "local Module",
+							"syntax": "Packages/Lua/Lua.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 165.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "gui.lua",
+					"settings":
+					{
+						"buffer_size": 19002,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								16099,
+								16099
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 12382.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "utf8.lua",
+					"settings":
+					{
+						"buffer_size": 4738,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4325,
+								4325
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.tmLanguage",
+							"tab_size": 3,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1479.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "code.lua",
+					"settings":
+					{
+						"buffer_size": 1938,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								686,
+								686
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"ed",
+				"/home/philips/development/bazinga.v2/editor.lua"
+			],
+			[
+				"code",
+				"/home/philips/development/bazinga.v2/code.lua"
+			],
+			[
+				"edit",
+				"/home/philips/development/bazinga.v2/editor.lua"
+			],
+			[
+				"gui",
+				"/home/philips/development/bazinga.v2/gui.lua"
+			],
+			[
+				"leve",
+				"/home/philips/development/bazinga.v2/level.lua"
+			],
+			[
+				"edi",
+				"/home/philips/development/bazinga.v2/editor.lua"
+			],
+			[
+				"le",
+				"/home/philips/development/bazinga.v2/level.lua"
+			],
+			[
+				"cod",
+				"/home/philips/development/bazinga.v2/code.lua"
+			],
+			[
+				"ma",
+				"/home/philips/development/bazinga.v2/levels/map01.json"
+			],
+			[
+				"ba",
+				"/home/philips/development/bazinga.v2/bazinga.v2.text"
+			],
+			[
+				"map",
+				"/home/philips/development/bazinga.v2/levels/map01.json"
+			],
+			[
+				"gu",
+				"/home/philips/development/bazinga.v2/gui.lua"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true
+}

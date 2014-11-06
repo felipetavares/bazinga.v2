@@ -8,7 +8,7 @@ local Layer = {
 
 -- Represents a level
 local Level = {
-}
+}	
 
 -- [Object]
 -- Helper
@@ -101,11 +101,112 @@ function Level:new ()
 		editing = {
 			layer = 0,
 			object = 0
+		},
+	
+		historyMark = 0,
+		history = {
 		}
 	}
 	setmetatable (o, {__index=self})
 
 	return o
+end
+
+function Level:copyObject (o)
+	local newO = {}
+	local k,v
+
+	newO.properties = {}
+
+	for k,v in pairs(o.properties) do
+		newO.properties[k] = v
+	end
+
+	setmetatable(newO, {__index=level.Object})
+
+	return newO
+end
+
+function Level:copyLayer (layer)
+	local newLayer = {}
+
+	newLayer.active = layer.active
+	newLayer.visible = layer.visible
+	newLayer.name = layer.name
+	newLayer.properties = {}
+	newLayer.data = {}
+
+	for k,v in pairs(layer.properties) do
+		newLayer.properties[k] = v
+	end
+
+	for k,v in pairs(layer.data) do
+		newLayer.data[k] = self:copyObject(v)
+	end
+
+	setmetatable(newLayer, {__index=level.Layer})
+
+	return newLayer
+end
+
+function Level:copyData (data)
+	local newData = {}
+
+	newData.name = data.name
+	newData.properties = {}
+	newData.layers = {}
+
+	for k,v in pairs(data.properties) do
+		newData.properties[k] = v
+	end
+
+	for k,v in pairs(data.layers) do
+		newData.layers[k] = self:copyLayer(v)
+	end
+
+	return newData
+end
+
+function Level:markInHistory ()
+	dataCopy = self:copyData (self.data)
+
+	self.historyMark = self.historyMark + 1
+
+	table.insert (self.history, dataCopy)
+
+	print ('Added history mark: #' .. tostring(self.historyMark))
+end
+
+function Level:undo ()
+	local oldData
+
+	if self.historyMark > 1 then
+		self.historyMark = self.historyMark - 1
+
+		oldData = self.history[self.historyMark]
+
+		self.data = oldData
+	
+		print ('Restored to story mark #' .. tostring(self.historyMark))
+	else
+		print ('Already in the oldest mark')
+	end
+end
+
+function Level:redo ()
+	local newData
+
+	if self.historyMark < #self.history then
+		self.historyMark = self.historyMark + 1
+
+		oldData = self.history[self.historyMark]
+
+		self.data = oldData
+	
+		print ('Advanced to story mark #' .. tostring(self.historyMark))
+	else
+		print ('Already in the newest mark')
+	end	
 end
 
 function Level:getLayerIndex (layer)
