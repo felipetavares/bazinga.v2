@@ -1083,6 +1083,22 @@ function onVisibleLayer (data, checked)
 	updateLayersList(data.container)
 end
 
+function onMoveUpLayer (data, checked)
+	if data.l <= #MainLevel.data.layers-1 then
+		layer = table.remove (MainLevel.data.layers, data.l)
+		table.insert (MainLevel.data.layers, data.l+1, layer)
+		updateLayersList(data.container)
+	end
+end
+
+function onMoveDownLayer (data, checked)
+	if data.l >= 1 then
+		layer = table.remove (MainLevel.data.layers, data.l)
+		table.insert (MainLevel.data.layers, data.l-1, layer)
+		updateLayersList(data.container)
+	end
+end
+
 function updateLayersList(container)
 	local l
 
@@ -1135,11 +1151,29 @@ function updateLayersList(container)
 		}
 		visible.fixedW = 24
 
+		local upButton = gui.Button:new('Up')
+		upButton:begin(onMoveUpLayer)
+		upButton.userData = {
+			l = l,
+			container = container
+		}
+		upButton.fixedW = 24
+
+		local downButton = gui.Button:new('Down')
+		downButton:begin(onMoveDownLayer)
+		downButton.userData = {
+			l = l,
+			container = container
+		}
+		downButton.fixedW = 24
+
 		local objects = gui.Widget:new(tostring (#MainLevel.data.layers[l].data))
 		objects.fixedW = 24
 
 		hcontainer:addWidget(button)
 		hcontainer:addWidget(objects)
+		hcontainer:addWidget(upButton)
+		hcontainer:addWidget(downButton)
 		hcontainer:addWidget(renameButton)
 		hcontainer:addWidget(deleteButton)
 		hcontainer:addWidget(visible)
