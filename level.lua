@@ -1,5 +1,8 @@
 local Module = {}
 
+local HistoryMark = {
+}
+
 local Object = {
 }
 
@@ -9,6 +12,17 @@ local Layer = {
 -- Represents a level
 local Level = {
 }	
+
+-- [History Mark]
+function HistoryMark:new (data, name)
+	local o = {
+		data = data or nil,
+		name = name or ''
+	}
+	setmetatable (o, {__index=self})
+
+	return o
+end
 
 -- [Object]
 -- Helper
@@ -104,6 +118,7 @@ function Level:new ()
 		},
 	
 		historyMark = 0,
+		historyLen = 0,
 		history = {
 		}
 	}
@@ -167,46 +182,35 @@ function Level:copyData (data)
 	return newData
 end
 
-function Level:markInHistory ()
+function Level:markInHistory (name)
 	dataCopy = self:copyData (self.data)
 
-	self.historyMark = self.historyMark + 1
+	self.historyMark = self.historyMark+1
 
-	table.insert (self.history, dataCopy)
+	self.history[self.historyMark] = HistoryMark:new(dataCopy, name)
 
-	print ('Added history mark: #' .. tostring(self.historyMark))
+	self.historyLen = self.historyMark
+
+	print ('#' .. tostring(self.historyMark))
 end
 
 function Level:undo ()
-	local oldData
-
 	if self.historyMark > 1 then
-		self.historyMark = self.historyMark - 1
+		self.historyMark = self.historyMark-1
 
-		oldData = self.history[self.historyMark]
+		self.data = self:copyData (self.history[self.historyMark].data)
 
-		self.data = oldData
-	
-		print ('Restored to story mark #' .. tostring(self.historyMark))
-	else
-		print ('Already in the oldest mark')
+		print ('#' .. tostring(self.historyMark))
 	end
 end
 
 function Level:redo ()
-	local newData
+	if self.historyMark < self.historyLen then
+		self.historyMark = self.historyMark+1
+		self.data = self:copyData (self.history[self.historyMark].data)
 
-	if self.historyMark < #self.history then
-		self.historyMark = self.historyMark + 1
-
-		oldData = self.history[self.historyMark]
-
-		self.data = oldData
-	
-		print ('Advanced to story mark #' .. tostring(self.historyMark))
-	else
-		print ('Already in the newest mark')
-	end	
+		print ('#' .. tostring(self.historyMark))
+	end
 end
 
 function Level:getLayerIndex (layer)

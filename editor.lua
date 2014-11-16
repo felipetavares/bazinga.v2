@@ -376,7 +376,6 @@ function ObjectEditor:mouseUp (x, y)
 	end
 
 	if self.moving then
-		MainLevel:markInHistory()
 		self.moving = false
 	end
 

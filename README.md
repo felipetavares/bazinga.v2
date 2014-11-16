@@ -2,7 +2,7 @@ Bazinga Engine v2
 =================
 Completely written in Lua with the Löve framework.
 
-Version 0.2b Bazinga Editor
+Version 0.2.2b Bazinga Editor
 
 About this release
 ------------------
@@ -16,5 +16,5 @@ TODO: Allow images in buttons
 * Ordered drawing (done)
     - Heap Sort (done)
 * Undo/Redo (done)
-    - Bug when undo and then do something. The history becames messed up
+    - Bug when undo and then do something. The history becames messed up (fixed)
 * Layer up/down movement (done)

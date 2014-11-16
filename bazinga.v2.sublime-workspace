@@ -4,252 +4,288 @@
 		"selected_items":
 		[
 			[
-				"re",
-				"rectangle"
+				"histo",
+				"historyMark"
 			],
 			[
-				"sel",
-				"selection"
+				"hist",
+				"history"
 			],
 			[
-				"Mai",
-				"MainCamera"
+				"his",
+				"historyMark"
 			],
 			[
-				"Ma",
-				"MainCamera"
+				"histor",
+				"historyMark"
 			],
 			[
-				"props",
-				"properties"
+				"hs",
+				"historyLen"
 			],
 			[
-				"new",
+				"up",
+				"upButton"
+			],
+			[
+				"add",
+				"addWidget"
+			],
+			[
+				"ma",
+				"historyMark"
+			],
+			[
+				"sele",
+				"selectionCopy"
+			],
+			[
+				"selec",
+				"selectionCopy"
+			],
+			[
+				"heap",
+				"heapsize"
+			],
+			[
+				"newO",
 				"newObject"
-			],
-			[
-				"obj",
-				"objectEditor"
-			],
-			[
-				"object",
-				"objectsList"
-			],
-			[
-				"prop",
-				"properties"
 			],
 			[
 				"obje",
 				"objectCopy"
 			],
 			[
-				"add",
-				"onAddObject"
+				"onRenm",
+				"onRenameOkay"
 			],
 			[
-				"upda",
-				"updateObjectsList"
+				"rename",
+				"renameWindow"
 			],
 			[
-				"focus",
-				"focusedWindow"
-			],
-			[
-				"focuse",
-				"focusedWindow"
-			],
-			[
-				"get",
-				"getFocused"
-			],
-			[
-				"fod",
-				"focusedWidget"
-			],
-			[
-				"save",
-				"onSaveCancel"
-			],
-			[
-				"fix",
-				"fixedW"
-			],
-			[
-				"fixed",
+				"fixe",
 				"fixedH"
 			],
 			[
-				"scroll",
-				"scrollContainer"
+				"dele",
+				"deleteButton"
 			],
 			[
-				"uo",
-				"updateGUIProps"
+				"update",
+				"updateLayersList"
 			],
 			[
-				"Pro",
-				"propList"
+				"fixed",
+				"fixedW"
 			],
 			[
-				"pr",
-				"propList"
+				"upda",
+				"updateLayersList"
 			],
 			[
-				"cur",
-				"cursor"
+				"obj",
+				"object"
 			],
 			[
-				"cursor",
-				"cursorPosition"
+				"ob",
+				"objects"
 			],
 			[
-				"onPr",
-				"onPropsOkay"
+				"coll",
+				"collideI"
 			],
 			[
-				"onP",
-				"onPropsApply"
+				"Main",
+				"MainLevel"
 			],
 			[
-				"key",
-				"keyDown"
+				"colli",
+				"boxCollide"
 			],
 			[
-				"grab",
-				"grabPosition"
+				"objec",
+				"object"
 			],
 			[
-				"gra",
-				"grabbing"
+				"begin",
+				"beginBoxSelection"
 			],
 			[
-				"m",
-				"mouseUp"
+				"object",
+				"objectCopy"
 			],
 			[
 				"is",
-				"isVisible"
+				"isDown"
 			],
 			[
-				"buton",
-				"buttoncontainer"
+				"not",
+				"notInSelection"
 			],
 			[
-				"entry",
-				"entrycontainer"
+				"o",
+				"objectEditor"
 			],
 			[
-				"but",
-				"buttoncontainer"
+				"in",
+				"init"
 			],
 			[
-				"text",
-				"textEntry"
+				"Unit",
+				"UnitType"
 			],
 			[
-				"en",
-				"entry"
+				"fac",
+				"factory"
 			],
 			[
-				"tex",
-				"textEntry"
+				"dialogOp",
+				"dialogOptionNumber2"
 			],
 			[
-				"files",
-				"filesystem"
+				"dialog",
+				"dialogItems"
 			],
 			[
-				"findLas",
-				"findLastUpper"
+				"dial",
+				"dialogItems"
 			],
 			[
-				"last",
-				"lastdir"
+				"aStar",
+				"aStarDistance"
 			],
 			[
-				"getW",
-				"getWorkingDirectory"
+				"ast",
+				"aStarDistance"
 			],
 			[
-				"file",
-				"filesystem"
+				"build",
+				"buildSelect"
+			],
+			[
+				"op",
+				"options"
+			],
+			[
+				"max",
+				"maxMinery"
+			],
+			[
+				"mine",
+				"mineryStr"
+			],
+			[
+				"minery",
+				"mineryLocation"
+			],
+			[
+				"render",
+				"renderWay"
+			],
+			[
+				"font",
+				"font-family"
+			],
+			[
+				"relo",
+				"reloading"
+			],
+			[
+				"reload",
+				"reloadTime"
+			],
+			[
+				"unit",
+				"unitSelected"
+			],
+			[
+				"cate",
+				"Category"
+			],
+			[
+				"catr",
+				"Category"
+			],
+			[
+				"item",
+				"items"
+			],
+			[
+				"posit",
+				"position"
+			],
+			[
+				"Vi",
+				"VerticalList"
+			],
+			[
+				"curren",
+				"currentItem"
+			],
+			[
+				"w",
+				"windowWidth"
+			],
+			[
+				"window",
+				"windowHeight"
+			],
+			[
+				"wind",
+				"windowWidth"
+			],
+			[
+				"windo",
+				"windowHeight"
 			],
 			[
 				"wi",
-				"window"
+				"windowHeight"
 			],
 			[
-				"mouse",
-				"mouseInside"
+				"text",
+				"texture"
 			],
 			[
-				"mainc",
-				"maincontainer"
+				"get",
+				"getKeyboard"
 			],
 			[
-				"unfixed",
-				"unfixedH"
+				"GL_AP",
+				"GL_ALPHA_TEST"
 			],
 			[
-				"unfi",
-				"unfixedN"
+				"bring",
+				"bringBack"
 			],
 			[
-				"un",
-				"unfixedW"
+				"pro",
+				"progress"
 			],
 			[
-				"lin",
-				"linkedContainer"
+				"progress",
+				"_progress"
 			],
 			[
-				"set",
-				"setFocus"
+				"file",
+				"filesystemManager"
 			],
 			[
-				"inver",
-				"invertWidgets"
+				"GL_ALP",
+				"GL_ALPHA_TEST"
 			],
 			[
-				"wid",
-				"widgets"
+				"se",
+				"setVisibility"
 			],
 			[
-				"widgets",
-				"invertWindgets"
+				"Z",
+				"ZJoystick"
 			],
 			[
-				"ge",
-				"getWidth"
-			],
-			[
-				"particl",
-				"particles"
-			],
-			[
-				"player",
-				"playerAnimationFrame"
-			],
-			[
-				"tur",
-				"tutorialTime"
-			],
-			[
-				"tutorial",
-				"tutorialTime"
-			],
-			[
-				"anim",
-				"playerAnimationFrame"
-			],
-			[
-				"play",
-				"playAnim"
-			],
-			[
-				"pla",
-				"playerChangeFrame"
+				"_",
+				"_joystick"
 			],
 			[
 				"Cons",
@@ -264,12 +300,20 @@
 				"nextX"
 			],
 			[
+				"mouse",
+				"mouseButton"
+			],
+			[
 				"ht",
 				"html5"
 			],
 			[
 				"res",
 				"restore"
+			],
+			[
+				"key",
+				"keyboard"
 			],
 			[
 				"floo",
@@ -280,16 +324,8 @@
 				"explode"
 			],
 			[
-				"render",
-				"renderClouds"
-			],
-			[
 				"expl",
 				"explode"
-			],
-			[
-				"dial",
-				"dialogNumber"
 			],
 			[
 				"dia",
@@ -376,10 +412,6 @@
 				"Explosao"
 			],
 			[
-				"ma",
-				"Math"
-			],
-			[
 				"cre",
 				"creditos"
 			],
@@ -390,6 +422,10 @@
 			[
 				"TP_",
 				"TP_PAREDE"
+			],
+			[
+				"ge",
+				"getObjetos"
 			],
 			[
 				"ca",
@@ -420,10 +456,6 @@
 				"creditosIniciais"
 			],
 			[
-				"font",
-				"font-size"
-			],
-			[
 				"buffer",
 				"buffer_b"
 			]
@@ -432,26 +464,18 @@
 	"buffers":
 	[
 		{
-			"file": "dkjson.lua",
-			"settings":
-			{
-				"buffer_size": 22416,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "bazinga.v2.text",
-			"settings":
-			{
-				"buffer_size": 177,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "main.lua",
 			"settings":
 			{
-				"buffer_size": 991,
+				"buffer_size": 1268,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "code.lua",
+			"settings":
+			{
+				"buffer_size": 1835,
 				"line_ending": "Unix"
 			}
 		},
@@ -459,7 +483,23 @@
 			"file": "cache.lua",
 			"settings":
 			{
-				"buffer_size": 307,
+				"buffer_size": 359,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "gui.lua",
+			"settings":
+			{
+				"buffer_size": 19195,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "camera.lua",
+			"settings":
+			{
+				"buffer_size": 877,
 				"line_ending": "Unix"
 			}
 		},
@@ -467,60 +507,35 @@
 			"file": "editor.lua",
 			"settings":
 			{
-				"buffer_size": 14264,
-				"line_ending": "Unix"
+				"buffer_size": 30551,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "sort.lua",
+			"settings":
+			{
+				"buffer_size": 1696,
+				"line_ending": "Windows"
 			}
 		},
 		{
 			"file": "level.lua",
 			"settings":
 			{
-				"buffer_size": 4567,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "camera.lua",
-			"settings":
-			{
-				"buffer_size": 865,
-				"line_ending": "Unix",
-				"name": "local Module"
-			}
-		},
-		{
-			"file": "gui.lua",
-			"settings":
-			{
-				"buffer_size": 19002,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "utf8.lua",
-			"settings":
-			{
-				"buffer_size": 4738,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "code.lua",
-			"settings":
-			{
-				"buffer_size": 1938,
-				"line_ending": "Unix"
+				"buffer_size": 7457,
+				"line_ending": "Windows"
 			}
 		}
 	],
-	"build_system": "",
+	"build_system": "Packages/User/love.sublime-build",
 	"command_palette":
 	{
-		"height": 0.0,
+		"height": 392.0,
 		"selected_items":
 		[
 		],
-		"width": 0.0
+		"width": 392.0
 	},
 	"console":
 	{
@@ -537,16 +552,57 @@
 	},
 	"file_history":
 	[
-		"/home/philips/development/bazinga.v2/code(with gui).lua",
-		"/home/philips/development/gift.mateus.gf/main.lua",
-		"/home/philips/development/bazinga.v2/utf8.lua",
-		"/home/philips/development/bazinga.v2/level.lua",
-		"/home/philips/development/bazinga.v2/levels/map01.json",
-		"/home/philips/development/bazinga.v2/dkjson.lua",
-		"/home/philips/software/windows/7zsfx/config.txt",
-		"/home/philips/development/gift.mateus.gf/maps/mapgame.json",
-		"/home/philips/development/gift.mateus.gf/maps/test.json",
-		"/home/philips/development/gift.mateus.gf/maps/map2.json",
+		"/C/Users/Rachel/Desktop/Development/bazinga.v2/README.md",
+		"/C/Users/Rachel/Desktop/Development/bazinga.v2/.gitignore",
+		"/C/Users/Rachel/AppData/Roaming/Sublime Text 2/Packages/User/love.sublime-build",
+		"/C/Users/Rachel/Desktop/Development/bazinga.v2/utf8.lua",
+		"/C/Users/Rachel/Desktop/Development/PoemJS/poema.js",
+		"/C/Users/Rachel/Desktop/Development/Web GL/main.js",
+		"/C/Users/Rachel/Desktop/Development/Web GL/webgl.js/webgl.js",
+		"/C/Users/Rachel/Desktop/Development/nesjam/1/engine/modules/math.js",
+		"/C/Users/Rachel/Desktop/Development/nesjam/1/engine/modules/particles.js",
+		"/C/Users/Rachel/Desktop/Development/nesjam/1/engine/modules/physics.js",
+		"/C/Users/Rachel/Desktop/Development/IFGames/BazingaEngine/ZTextManager/ZTextManager.cpp",
+		"/C/Users/Rachel/Desktop/Development/IFGames/BazingaEngine/ZTextManager/ZTextManager.h",
+		"/C/Users/Rachel/Desktop/Development/IFGames/BazingaEngine/ZEngineDecl.h",
+		"/C/Users/Rachel/Desktop/Development/IFGames/BazingaEngine/ZScene/ZScene.cpp",
+		"/C/Users/Rachel/Desktop/Development/IFGames/BazingaEngine/ZObject/Objects/ZPlayerObject.cpp",
+		"/C/Users/Rachel/Desktop/Development/IFGames/BazingaEngine/ZAssetsManager/ZAssetsManager.cpp",
+		"/C/Users/Rachel/Desktop/Development/IFGames/BazingaEngine/ZGUIManager/ZGUIManager.cpp",
+		"/C/Users/Rachel/Desktop/Development/IFGames/BazingaEngine/Assets/list.json",
+		"/C/Users/Rachel/Desktop/Development/IFGames/BazingaEngine/Main.cpp",
+		"/C/Users/Rachel/Desktop/Development/IFGames/BazingaEngine/ZEngine/ZEngine.cpp",
+		"/C/Users/Rachel/Desktop/Development/IFGames/BazingaEngine/ZVideoManager/ZVideoManager.cpp",
+		"/C/Users/Rachel/Desktop/Development/IFGames/BazingaEngine/ZObject/ZObject.h",
+		"/C/Users/Rachel/Desktop/Development/IFGames/BazingaEngine/ZObject/Objects/ZPlayerObject.h",
+		"/C/Users/Rachel/Desktop/Development/IFGames/BazingaEngine/ZUtil/ZUtil.h",
+		"/C/Users/Rachel/Desktop/Development/IFGames/BazingaEngine/ZMath/math/li/li.cpp",
+		"/C/Users/Rachel/Desktop/Development/IFGames/BazingaEngine/ZMath/math/li/li.h",
+		"/C/Users/Rachel/Desktop/Development/IFGames/BazingaEngine/ZGUIManager/ZGUIManager.h",
+		"/C/Users/Rachel/Desktop/Development/IFGames/BazingaEngine/ZInputManager/ZInputManager.h",
+		"/C/Users/Rachel/Desktop/Development/IFGames/BazingaEngine/ZEditor/ZEditor.cpp",
+		"/C/Users/Rachel/Desktop/Development/IFGames/BazingaEngine/ZFilesystemManager/ZFilesystemManager.cpp",
+		"/C/Users/Rachel/Desktop/Development/IFGames/BazingaEngine/ZEditor/ZEditor.h",
+		"/C/Users/Rachel/Desktop/Development/IFGames/BazingaEngine/ZAssetsManager/ZAssetsManager.h",
+		"/C/Users/Rachel/Desktop/Development/IFGames/BazingaEngineCodeBlocks/Assets/map.map",
+		"/C/Users/Rachel/Desktop/Development/IFGames/BazingaEngineCodeBlocks/stdout.txt",
+		"/C/Users/Rachel/Desktop/Development/IFGames/BazingaEngine/ZVideoManager/ZVideoManager.h",
+		"/C/Users/Rachel/Desktop/Development/IFGames/BazingaEngine/ZInputManager/ZInputManager.cpp",
+		"/C/Users/Rachel/Desktop/Development/IFGames/BazingaEngineCodeBlocks/Assets/Animations/player-down.anim",
+		"/C/Users/Rachel/Desktop/Development/IFGames/BazingaEngineCodeBlocks/Assets/Animations/player-left.anim",
+		"/C/Users/Rachel/Desktop/Development/IFGames/BazingaEngineCodeBlocks/Assets/Animations/player-up.anim",
+		"/C/Users/Rachel/Desktop/Development/IFGames/BazingaEngine/ZUtil/ZUtil.cpp",
+		"/C/Users/Rachel/Desktop/Development/IFGames/BazingaEngineCodeBlocks/Assets/list.json",
+		"/C/Users/Rachel/Desktop/Development/IFGames/BazingaEngineCodeBlocks/bin/dist-1.1.0b/Assets/list.json",
+		"/C/Users/Rachel/Desktop/Development/IFGames/BazingaEngineCodeBlocks/bin/dist-E-1.1.0b/Assets/list.json",
+		"/C/Users/Rachel/Desktop/Development/IFGames/BazingaEngine/Assets/Animations/player-left.anim",
+		"/C/Users/Rachel/Desktop/Development/IFGames/BazingaEngine/Assets/Animations/player-up.anim",
+		"/C/Users/Rachel/Desktop/Development/IFGames/BazingaEngine/Assets/Animations/player-down.anim",
+		"/C/Users/Rachel/Desktop/Development/IFGames/BazingaEngineCodeBlocks/Assets/dump.json",
+		"/C/Users/Rachel/Desktop/Development/JSEngine2/web/main.js",
+		"/C/Users/Rachel/Desktop/Development/IFGames/BazingaEngineCodeBlocks/Assets/map.json",
+		"/C/Users/Rachel/Desktop/Development/IFGames/BazingaEngineCodeBlocks/Assets/file.json",
+		"/C/Users/Rachel/Desktop/Development/IFGames/BazingaEngine/WhatINeedToDo.txt",
 		"/home/philips/development/webdomino/web/main.js",
 		"/home/philips/development/JSEngine2/web/main.js",
 		"/home/philips/development/JSEngine2/web/modules/math.js",
@@ -623,16 +679,7 @@
 		"/home/philips/development/ccsl/samanau_sat/trunk/ard_hallib/complete.with.sensors/arduino/arduino.ino",
 		"/home/philips/development/ccsl/samanau_sat/trunk/ard_hallib/hallib/hallib.cpp",
 		"/home/philips/development/ccsl/samanau_sat/trunk/ard_hallib/hallib/hallib.h",
-		"/home/philips/development/ccsl/samanau_sat/trunk/ard_hallib/complete.with.sensors/arduino/ligth_driver.h",
-		"/home/philips/development/ccsl/samanau_sat/trunk/ard_hallib/complete.with.sensors/arduino.ino",
-		"/home/philips/development/ccsl/samanau_sat/trunk/ard_hallib/complete.with.sensors/scommp.cpp",
-		"/home/philips/development/ccsl/samanau_sat/trunk/ard_hallib/complete.with.sensors/scommp.h",
-		"/home/philips/development/ccsl/samanau_sat/trunk/ard_hallib/complete.with.sensors/satellite.cpp",
-		"/home/philips/development/ccsl/samanau_sat/trunk/ard_hallib/complete.with.sensors/satellite.h",
-		"/home/philips/development/ccsl/samanau_sat/trunk/ard_hallib/complete.with.sensors/limits.h",
-		"/home/philips/development/ccsl/projeto_samanau/trunk/arduino/arduino.ino",
-		"/home/philips/development/ccsl/ijs/jquery.js",
-		"/home/philips/development/ccsl/ijs/js/I.js~"
+		"/home/philips/development/ccsl/samanau_sat/trunk/ard_hallib/complete.with.sensors/arduino/ligth_driver.h"
 	],
 	"find":
 	{
@@ -643,195 +690,231 @@
 		"height": 0.0,
 		"where_history":
 		[
+			"<open files>",
+			"C:\\Users\\Rachel\\Desktop\\Development\\IFGames\\BazingaEngine\\,*.cpp,*.h,",
+			"C:\\Users\\Rachel\\Desktop\\Development\\IFGames\\BazingaEngine\\,*.cpp,*.h,-*Box2D*",
+			"C:\\Users\\Rachel\\Desktop\\Development\\IFGames\\BazingaEngine\\,*.cpp,*.h",
+			"C:\\Users\\Rachel\\Desktop\\Development\\IFGames\\BazingaEngine\\Z*",
+			"C:\\Users\\Rachel\\Desktop\\Development\\IFGames\\BazingaEngine",
 			"/home/philips/development/bomberman/web",
 			""
 		]
 	},
 	"find_state":
 	{
-		"case_sensitive": false,
+		"case_sensitive": true,
 		"find_history":
 		[
+			"mark",
+			"undo",
+			"up",
+			"renameButton",
+			"updateLayers",
+			"LayersWindow",
+			"([^y])y",
+			"([^t])h",
+			"([^a])y",
+			"x",
 			"y",
 			"x",
-			"mouseUp",
-			"x",
-			"onAddObject",
-			"widget:render",
-			"mousemove",
-			"bringUp",
-			"bringUp\\(w\\)",
-			"window:isinside",
-			"editor",
-			"openFileWindow",
-			"cancel",
-			"list",
-			"Button",
-			"PropsNew",
-			".x",
-			".w",
-			".x",
-			" or ",
-			"or ",
-			"or",
-			"print",
-			"combine",
-			"print",
-			".w",
-			".x",
-			"widget:render",
-			"container:render",
-			"\\.w",
-			"\\.x",
-			"scissor",
-			"textbox",
-			"sub",
-			"open",
-			"space",
-			"lctrl",
-			"d(x|y)",
-			"object.properties.",
-			" ([x|y])",
-			"mouseDown",
-			"mouseDOwn",
-			"mouseUp",
-			"select",
-			"V",
-			"mouseUp",
-			"button",
-			"not self.isVisible",
-			"button",
-			"131",
-			"Button",
-			"border",
-			"folder",
-			"Button",
-			"mouseDown",
-			"container:invalid",
-			"Container:invalidate",
-			"invalidate",
-			"Container:inval",
-			"VContain",
-			"leave",
-			"- 2",
-			":resize",
-			"setSci",
-			"checkbox",
-			"CheckBox",
-			"0.5",
-			"setColor",
-			"Container:inval",
-			"invalidate",
-			"Container",
-			"resize",
-			"getX",
-			"Container:update",
-			"Container:",
-			":resize",
-			"HConta",
-			"VCon",
-			"Container:",
-			"scissor",
-			"widget",
-			"Container:",
-			"container:invalidade",
-			"Widget:render",
-			"print",
-			"ScrollBar",
-			"TextBox",
-			"Widget:render",
-			"stroke",
-			"widget:inp",
-			"input",
+			"isNumber",
 			"focus",
-			":focus",
-			"Container",
-			"widget:render",
-			"Container",
-			"invertWid",
-			"window",
-			"Down",
-			"w",
-			"mouseDown",
-			"mouseUp",
-			"obj",
-			"<",
-			"x",
-			"layer",
-			"x",
-			"particle",
-			":set",
-			"playerAni",
-			"gameEnd",
+			"openFileWindow",
+			"File",
+			"active",
+			"renameButton",
+			"self.level.layers",
+			"self.layer",
+			"boxCollide",
+			"entry",
+			"beginB",
+			".h",
+			".w",
+			".y",
+			"Y",
+			"max",
+			"min",
 			"1",
-			"noSpace",
-			"space",
-			"force",
-			"ongrou",
-			"t",
-			"pyi",
-			"pxi",
-			"translate",
+			" y ",
+			" x ",
+			"object.properties",
+			"boxColl",
+			"w",
+			"render",
+			"self",
+			"objectEditor",
+			"selection",
+			"bookmarkObject",
+			"updateObject",
+			"openObjectsWindow",
+			"maps",
+			"Layer",
+			"make",
+			"makeDir",
+			"mkdir",
+			"Unit",
+			"dialogOption",
+			"factory",
+			"STORAGE",
+			"option",
+			"options",
+			"10",
+			"1",
+			"at",
+			"render",
+			"units",
+			"this.units\\[u\\]",
+			"this.units[u]",
+			"this.units\\[u\\]",
+			"facti",
+			"shots",
+			"Storage",
+			"bWhat",
+			"Building",
+			"this.goTo",
+			"target",
+			"py.",
+			"px.",
+			"px",
+			"\\*scale",
+			"Minery",
+			"this.angle",
+			"return",
+			"astarcos",
+			"this.physics.p",
+			"32",
+			"level",
+			"openInventory",
+			"food",
+			"Disable",
+			"Math",
+			"Mat",
+			"food",
+			"Category",
+			"icons.size",
+			"category",
+			"list",
+			"na",
+			"pull",
+			"ZEngine",
+			"box2d",
+			"obj->graphic->texture->rheight",
+			"obj->graphic->texture->rwidth",
+			"obj->graphic->size->y",
+			"obj->graphic->size->x",
+			"width",
+			"obj->graphic->",
+			"button1",
+			"have",
+			"button1",
+			"button",
+			"erase",
+			"index",
+			"indexOf",
+			"erase",
+			"^.*$",
+			"remove",
+			" (",
+			"grid",
+			"panel",
 			"x",
-			"\\[0",
-			"0",
-			"Glass",
-			"Page",
-			"client",
-			"offset",
-			"Player"
+			"_w\\.",
+			"_m\\.",
+			"x",
+			"_z",
+			"_s",
+			"_p",
+			"keyboard",
+			"joystick",
+			"keyboard",
+			"mouse",
+			"joystick",
+			"mouse",
+			"player",
+			"^.*$",
+			"$.*^"
 		],
 		"highlight": true,
-		"in_selection": true,
+		"in_selection": false,
 		"preserve_case": false,
 		"regex": true,
 		"replace_history":
 		[
+			"down",
+			"upButton",
+			"$1x",
+			"$1w",
+			"$1x",
+			"y",
 			"h",
 			"w",
-			"y",
-			"gui.bringUp(w)",
-			".y",
+			"visible",
+			"active",
+			"self.level.data.layers",
+			"self.level.layers[l]",
+			"e1",
+			".w",
 			".h",
-			".y",
-			".h",
-			".y",
-			".h",
-			".y",
-			"utf8sub",
-			" ",
-			"space",
-			"p$1",
-			"",
-			" d$1",
-			"mouseMove",
-			"mouseUp",
-			"mouseDown",
-			"mouseUp",
-			"",
-			"select",
-			"load",
-			"self.isVisible",
-			"cancel",
-			"goBack",
-			"button",
-			"Button",
-			"CheckBox",
-			"ScrollBar",
-			"line",
-			"HContainer",
-			"VContainer",
-			"Window",
-			"container",
-			"Up",
+			".x",
+			"X",
+			"maxY",
+			"maxY\nmaxY",
+			"minY",
+			"s",
+			" object.properties.y ",
+			" object.properties.x ",
+			"box",
 			"h",
-			"mouseMove",
-			"mouseUp",
-			"mouseMove",
+			"selection[s]",
+			"clearBookmark",
+			"dialogOptionNumber",
+			"text",
+			"this.aStarDistance",
+			"objects",
+			"this.objects[o]",
+			"Storage",
+			"buildPosition",
+			"",
+			"this.angleV",
+			"this.angle =",
+			"this.target",
+			"content",
+			"Enable",
+			"Mat",
+			"Match",
+			"new Math",
+			"tools",
+			"InventoryTree",
+			"actions",
+			"items",
+			"category",
+			"np",
+			"texture->rheight",
+			"texture->rwidth",
+			"texture->height",
+			"texture->width",
+			"height",
+			"",
+			"entry",
+			"button3\nbutton3",
+			"ProgressBar",
+			"menu",
 			"y",
-			"object",
+			"_w->",
+			"_m->",
 			"y",
-			"noJump",
+			"z",
+			"s",
+			"p",
+			"mouse",
+			"keyboard",
+			"joystick",
+			"keyboard",
+			"mouse",
+			"joystick",
+			"keyboard",
+			"joystick",
+			"keyboard",
 			"syi",
 			"sxi",
 			"scale",
@@ -884,10 +967,7 @@
 			"Instrucoes",
 			"%",
 			"li",
-			"this.$1",
-			"x1",
-			"SATELLITE",
-			"this.jDiv"
+			"this.$1"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -898,30 +978,29 @@
 	"groups":
 	[
 		{
-			"selected": 4,
+			"selected": 7,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "dkjson.lua",
+					"file": "main.lua",
 					"settings":
 					{
-						"buffer_size": 22416,
+						"buffer_size": 1268,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2178,
-								2178
+								0,
+								0
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/Lua/Lua.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -931,23 +1010,24 @@
 				},
 				{
 					"buffer": 1,
-					"file": "bazinga.v2.text",
+					"file": "code.lua",
 					"settings":
 					{
-						"buffer_size": 177,
+						"buffer_size": 1835,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								177,
-								177
+								83,
+								83
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"syntax": "Packages/Lua/Lua.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -957,50 +1037,22 @@
 				},
 				{
 					"buffer": 2,
-					"file": "main.lua",
-					"settings":
-					{
-						"buffer_size": 991,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								48,
-								48
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Lua/Lua.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
 					"file": "cache.lua",
 					"settings":
 					{
-						"buffer_size": 307,
+						"buffer_size": 359,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								170,
-								170
+								359,
+								359
 							]
 						],
 						"settings":
 						{
-							"auto_name": "",
 							"syntax": "Packages/Lua/Lua.tmLanguage"
 						},
 						"translation.x": 0.0,
@@ -1010,19 +1062,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "editor.lua",
+					"buffer": 3,
+					"file": "gui.lua",
 					"settings":
 					{
-						"buffer_size": 14264,
+						"buffer_size": 19195,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								6941,
-								6941
+								0,
+								0
 							]
 						],
 						"settings":
@@ -1031,25 +1083,52 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 4462.0,
+						"translation.y": 14323.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "camera.lua",
+					"settings":
+					{
+						"buffer_size": 877,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								652,
+								652
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 225.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 5,
-					"file": "level.lua",
+					"file": "editor.lua",
 					"settings":
 					{
-						"buffer_size": 4567,
+						"buffer_size": 30551,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								293,
-								293
+								7293,
+								7293
 							]
 						],
 						"settings":
@@ -1058,53 +1137,52 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 165.0,
+						"translation.y": 4498.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 6,
-					"file": "camera.lua",
+					"file": "sort.lua",
 					"settings":
 					{
-						"buffer_size": 865,
+						"buffer_size": 1696,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								61,
-								61
+								1517,
+								1517
 							]
 						],
 						"settings":
 						{
-							"auto_name": "local Module",
 							"syntax": "Packages/Lua/Lua.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 165.0,
+						"translation.y": 180.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 7,
-					"file": "gui.lua",
+					"file": "level.lua",
 					"settings":
 					{
-						"buffer_size": 19002,
+						"buffer_size": 7457,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								16099,
-								16099
+								2956,
+								2956
 							]
 						],
 						"settings":
@@ -1113,62 +1191,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 12382.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "utf8.lua",
-					"settings":
-					{
-						"buffer_size": 4738,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								4325,
-								4325
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Lua/Lua.tmLanguage",
-							"tab_size": 3,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1479.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "code.lua",
-					"settings":
-					{
-						"buffer_size": 1938,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								686,
-								686
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Lua/Lua.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 2248.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1207,6 +1230,10 @@
 		]
 	},
 	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 155.0
+	},
 	"replace":
 	{
 		"height": 62.0
@@ -1218,52 +1245,212 @@
 		"selected_items":
 		[
 			[
-				"ed",
-				"/home/philips/development/bazinga.v2/editor.lua"
-			],
-			[
-				"code",
-				"/home/philips/development/bazinga.v2/code.lua"
-			],
-			[
-				"edit",
-				"/home/philips/development/bazinga.v2/editor.lua"
-			],
-			[
-				"gui",
-				"/home/philips/development/bazinga.v2/gui.lua"
-			],
-			[
 				"leve",
-				"/home/philips/development/bazinga.v2/level.lua"
+				"/C/Users/Rachel/Desktop/Development/bazinga.v2/level.lua"
 			],
 			[
-				"edi",
-				"/home/philips/development/bazinga.v2/editor.lua"
+				"par",
+				"engine/modules/particles.js"
 			],
 			[
-				"le",
-				"/home/philips/development/bazinga.v2/level.lua"
+				"mah",
+				"engine/modules/math.js"
 			],
 			[
-				"cod",
-				"/home/philips/development/bazinga.v2/code.lua"
+				"uui",
+				"engine/modules/ui.js"
+			],
+			[
+				"ui",
+				"engine/modules/ui.js"
+			],
+			[
+				"phy",
+				"engine/modules/physics.js"
+			],
+			[
+				"anim",
+				"engine/modules/animation.js"
+			],
+			[
+				"ph",
+				"engine/modules/physics.js"
+			],
+			[
+				"ztex",
+				"ZTextManager/ZTextManager.cpp"
+			],
+			[
+				"zgui",
+				"ZGUIManager/ZGUIManager.h"
+			],
+			[
+				"zcab",
+				"ZObject/Objects/ZCabinetObject.h"
+			],
+			[
+				"zcabi",
+				"ZObject/Objects/ZCabinetObject.cpp"
+			],
+			[
+				"zsce",
+				"ZScene/ZScene.cpp"
+			],
+			[
+				"zass",
+				"ZAssetsManager/ZAssetsManager.cpp"
+			],
+			[
+				"zasse",
+				"ZAssetsManager/ZAssetsManager.cpp"
+			],
+			[
+				"zscene",
+				"ZScene/ZScene.cpp"
+			],
+			[
+				"list",
+				"Assets/list.json"
+			],
+			[
+				"pi",
+				"ZObject/Objects/PI.h"
+			],
+			[
+				"zpa",
+				"ZObject/Objects/ZPlayerObject.h"
+			],
+			[
+				"li.h",
+				"ZMath/math/li/li.h"
+			],
+			[
+				"zobjec",
+				"ZObject/ZObject.h"
+			],
+			[
+				"zplaye",
+				"ZObject/Objects/ZPlayerObject.h"
+			],
+			[
+				"zuti",
+				"ZUtil/ZUtil.cpp"
+			],
+			[
+				"zutil",
+				"ZUtil/ZUtil.h"
+			],
+			[
+				"zpla",
+				"ZObject/Objects/ZPlayerObject.cpp"
+			],
+			[
+				"zobe",
+				"ZObject/ZObject.cpp"
+			],
+			[
+				"main",
+				"Main.cpp"
+			],
+			[
+				"zengine",
+				"ZEngine/ZEngine.cpp"
+			],
+			[
+				"zvideo",
+				"ZVideoManager/ZVideoManager.cpp"
+			],
+			[
+				"zs",
+				"ZScene/ZScene.cpp"
+			],
+			[
+				"zplaer",
+				"ZObject/Objects/ZPlayerObject.h"
+			],
+			[
+				"map.map",
+				"/C/Users/Rachel/Desktop/Development/IFGames/BazingaEngineCodeBlocks/Assets/map.map"
+			],
+			[
+				"s",
+				"/C/Users/Rachel/Desktop/Development/IFGames/BazingaEngineCodeBlocks/stdout.txt"
+			],
+			[
+				"stdo",
+				"/C/Users/Rachel/Desktop/Development/IFGames/BazingaEngineCodeBlocks/stdout.txt"
+			],
+			[
+				"std",
+				"/C/Users/Rachel/Desktop/Development/IFGames/BazingaEngineCodeBlocks/stdout.txt"
+			],
+			[
+				"zeng",
+				"ZEngine/ZEngine.cpp"
+			],
+			[
+				"zfie",
+				"ZFilesystemManager/ZFilesystemManager.cpp"
+			],
+			[
+				"zen",
+				"ZEngine/ZEngine.cpp"
+			],
+			[
+				"z",
+				"ZGUIManager/ZGUIManager.cpp"
+			],
+			[
+				"zi",
+				"ZInputManager/ZInputManager.h"
+			],
+			[
+				"zvide",
+				"ZVideoManager/ZVideoManager.cpp"
+			],
+			[
+				"zin",
+				"ZInputManager/ZInputManager.cpp"
+			],
+			[
+				"mai",
+				"Main.cpp"
+			],
+			[
+				"zed",
+				"ZEditor/ZEditor.h"
+			],
+			[
+				"",
+				"ZGUIManager/ZGUIManager.cpp"
 			],
 			[
 				"ma",
-				"/home/philips/development/bazinga.v2/levels/map01.json"
+				"Main.cpp"
 			],
 			[
-				"ba",
-				"/home/philips/development/bazinga.v2/bazinga.v2.text"
+				"zv",
+				"ZVideoManager/ZVideoManager.h"
 			],
 			[
-				"map",
-				"/home/philips/development/bazinga.v2/levels/map01.json"
+				"zg",
+				"ZGUIManager/ZGUIManager.h"
 			],
 			[
-				"gu",
-				"/home/philips/development/bazinga.v2/gui.lua"
+				"text",
+				"ZTextManager/ZTextManager.h"
+			],
+			[
+				"ztext",
+				"ZTextManager/ZTextManager.cpp"
+			],
+			[
+				"zvi",
+				"ZVideoManager/ZVideoManager.cpp"
+			],
+			[
+				"zinput",
+				"ZInputManager/ZInputManager.h"
 			]
 		],
 		"width": 0.0
