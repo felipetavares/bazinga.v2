@@ -222,24 +222,35 @@ function ObjectEditor:updateGUIProps()
 end
 
 function ObjectEditor:mouseDown (x, y, button)
-	if love.keyboard.isDown ('lctrl') then
+	if love.keyboard.isDown ('lalt') then
 		if button == 'l' then
 			if self:isInside(self.object.properties.x, self.object.properties.y,
 							 self.object.properties.w, self.object.properties.h, x, y) then
-				self.grabbing = true
+				self.positioning = true
 				self.grabPosition.x = x
 				self.grabPosition.y = y
 			end
 		end
 	else
-		if button == 'l' then
-			if self:isInside(self.object.properties.x, self.object.properties.y,
-							 self.object.properties.w, self.object.properties.h, x, y) then
-				self.moving = true
-				self.grabPosition.x = x
-				self.grabPosition.y = y
+		if love.keyboard.isDown ('lctrl') then
+			if button == 'l' then
+				if self:isInside(self.object.properties.x, self.object.properties.y,
+								 self.object.properties.w, self.object.properties.h, x, y) then
+					self.grabbing = true
+					self.grabPosition.x = x
+					self.grabPosition.y = y
+				end
 			end
-		end		
+		else
+			if button == 'l' then
+				if self:isInside(self.object.properties.x, self.object.properties.y,
+								 self.object.properties.w, self.object.properties.h, x, y) then
+					self.moving = true
+					self.grabPosition.x = x
+					self.grabPosition.y = y
+				end
+			end		
+		end
 	end
 end
 
@@ -370,6 +381,11 @@ function ObjectEditor:toGrid (x, y)
 end
 
 function ObjectEditor:mouseUp (x, y)
+	if self.positioning then
+		MainLevel:markInHistory()
+		self.positioning = false
+	end
+
 	if self.grabbing then
 		MainLevel:markInHistory()
 		self.grabbing = false
@@ -395,6 +411,17 @@ function ObjectEditor:mouseMove (x, y)
 
 		self.object.properties.w = self.object.properties.w - dx
 		self.object.properties.h = self.object.properties.h - dy
+	
+		self.grabPosition.x = x
+		self.grabPosition.y = y
+	end
+
+	if self.positioning then
+		dx = self.grabPosition.x-x
+		dy = self.grabPosition.y-y
+
+		self.object.properties.gx = self.object.properties.gx - dx
+		self.object.properties.gy = self.object.properties.gy - dy
 	
 		self.grabPosition.x = x
 		self.grabPosition.y = y

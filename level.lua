@@ -33,6 +33,8 @@ function Object:new (x, y)
 			-- All spatial related
 			x = 0,
 			y = 0,
+			gx = 0,
+			gy = 0,
 			w = 16,
 			h = 16,
 			z = 0,
@@ -57,10 +59,10 @@ function Object:render (camera)
 		love.graphics.rectangle ('fill', camera:getX(self.properties.x), camera:getY(self.properties.y),
 									 camera:getW(self.properties.w), camera:getH(self.properties.h))
 		love.graphics.setColor (255, 255, 255, 255)
-		love.graphics.draw (image, camera:getX(self.properties.x), camera:getY(self.properties.y), 0, camera.sx, camera.sy)
+		love.graphics.draw (image, camera:getX(self.properties.x+self.properties.gx), camera:getY(self.properties.y+self.properties.gy), 0, camera.sx, camera.sy)
 	else
 		love.graphics.setColor (255, 0, 0, 255)
-		love.graphics.rectangle ('fill', camera:getX(self.properties.x), camera:getY(self.properties.y),
+		love.graphics.rectangle ('fill', camera:getX(self.properties.x+self.properties.gx), camera:getY(self.properties.y+self.properties.gy),
 									 camera:getW(self.properties.w), camera:getH(self.properties.h))
 	end
 end
@@ -263,6 +265,15 @@ function Level:readFromFile (fileName)
 			local o
 			for o=1, #self.data.layers[l].data do
 				setmetatable (self.data.layers[l].data[o], {__index=Object})
+
+				if not self.data.layers[l].data[o].properties.gx then
+					self.data.layers[l].data[o].properties.gx = 0
+				end
+
+				if not self.data.layers[l].data[o].properties.gy then
+					self.data.layers[l].data[o].properties.gy = 0
+				end
+
 				if self.data.layers[l].data[o].properties.name ~= 'unamed' then
 					editor.bookmarkObject (self.data.layers[l].data[o])
 				end
