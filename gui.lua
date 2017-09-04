@@ -406,7 +406,6 @@ end
 
 function ScrollBar:move (x, y)
 	if self.isclicked == true then
-		
 		if self.type == 'horizontal' then
 			self.position = (x-self.x)/self.w
 		else
@@ -421,13 +420,13 @@ function ScrollBar:move (x, y)
 end
 
 function ScrollBar:down (button)
-	if button == 'l' then
+	if button == 1 then
 		self.isclicked = true
 	end
 end
 
 function ScrollBar:up (button)
-	if button == 'l' then
+	if button == 1 then
 		self.isclicked = false
 	end
 end
@@ -853,8 +852,8 @@ end
 function Window:new (visible)
 	local o = {
 		isVisible = true,
-		x = love.window.getWidth()/4, y = love.window.getHeight()/4,
-		w = love.window.getWidth()/2, h = love.window.getHeight()/2,
+		x = love.graphics.getWidth()/4, y = love.graphics.getHeight()/4,
+		w = love.graphics.getWidth()/2, h = love.graphics.getHeight()/2,
 		rootContainer = nil
 	}
 
