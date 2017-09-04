@@ -77,7 +77,7 @@ local function update ()
 end
 
 local function render ()
-	love.graphics.setScissor (0,0,love.window:getWidth(),love.window:getHeight())
+	love.graphics.setScissor (0,0,love.graphics:getWidth(),love.graphics:getHeight())
 	love.graphics.clear()
 
 	MainLevel:render(MainCamera)
